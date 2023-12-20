@@ -45,5 +45,6 @@ public class SetmealServiceImpl implements SetmealService {
         });
 
         // 保存套餐和菜品的关联关系
+        setmealDishMapper.insertBatch(setmealDishes);
     }
 }
