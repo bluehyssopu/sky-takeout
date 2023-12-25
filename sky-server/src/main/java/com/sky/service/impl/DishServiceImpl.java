@@ -175,6 +175,7 @@ public class DishServiceImpl implements DishService {
      * @param status
      * @param id
      */
+    @Transactional
     public void startOrStop(Integer status, Long id) {
         Dish dish = Dish.builder()
                 .id(id)
